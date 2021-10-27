@@ -4,7 +4,7 @@
 
 ## 1. Instructions
 
-You are started with several files. One of them is `games.csv`. It contains a comma-separated list of all games of the final three rounds of the World Cup tournement since 2014, the titles are at the top. It includes the year of each game, the round of the tournament the game was in, the winner, their opponenet, and the number of goals each team scored. You need to do three things for this project:
+You are started with several files. One of them is `games.csv`. It contains a comma-separated list of all games of the final three rounds of the World Cup tournament since 2014, the titles are at the top. It includes the year of each game, the round of the tournament the game was in, the winner, their opponent, and the number of goals each team scored. You need to do three things for this project:
 
 Create the database according to the user stories. Log into the psql interactive terminal with `psql --username=freecodecamp --dbname=postgres`. Create your database structure with the interactive terminal. **Don't forget to connect to the database after you create it.**
 
@@ -24,7 +24,7 @@ Complete the tasks below
 - You should **connect to your worldcup** database and then create `teams` and `games` tables
 - Your `teams` table should have a `team_id` column as its primary key and a `name` column that has to be `UNIQUE`
 - Your `games` table should have a `game_id` column as its primary key, a `year` column of type `INT`, and a `round` column of type `VARCHAR`
-- Your `games` table should have `winner_id` and `opponenent_id` foreign key columns that each reference `team_id` from the `teams` table
+- Your `games` table should have `winner_id` and `opponent_id` foreign key columns that each reference `team_id` from the `teams` table
 - Your `games` table should have `winner_goals` and `opponent_goals` columns that are type `INT`
 - All of your columns should have the `NOT NULL` constraint
 - Your two script (`.sh`) files should have executable permissions. Other tests involving these two files will fail until permissions are correct. When these permissions are enabled, the tests will take significantly longer to run
